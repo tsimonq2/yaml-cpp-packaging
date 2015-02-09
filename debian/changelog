@@ -1,6 +1,7 @@
 yaml-cpp (0.5.1-2) UNRELEASED; urgency=medium
 
   * Inject package into collab-maint to enable more people contributing
+  * cme fix dpkg-control
 
  -- Andreas Tille <tille@debian.org>  Mon, 09 Feb 2015 13:36:42 +0100
 

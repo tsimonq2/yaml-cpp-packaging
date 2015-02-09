@@ -1,20 +1,23 @@
 Source: yaml-cpp
-Section: devel
-Priority: optional
 Maintainer: Lifeng Sun <lifongsun@gmail.com>
 Uploaders: Andreas Tille <tille@debian.org>
-Build-Depends: debhelper (>= 7.0.50~), cmake, libboost-dev
-Standards-Version: 3.9.4
-Vcs-Git: git://git.debian.org/git/collab-maint/yaml-cpp.git
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/yaml-cpp.git
+Section: devel
+Priority: optional
+Build-Depends: debhelper (>= 7.0.50~),
+               cmake,
+               libboost-dev
+Standards-Version: 3.9.6
+Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/yaml-cpp.git
+Vcs-Git: git://anonscm.debian.org/collab-maint/yaml-cpp.git
 Homepage: http://code.google.com/p/yaml-cpp/
 
 Package: libyaml-cpp0.5
-Section: libs
 Architecture: any
 Multi-Arch: same
+Section: libs
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
 Pre-Depends: ${misc:Pre-Depends}
-Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: YAML parser and emitter for C++
  yaml-cpp is a C++ library for parsing and emitting data in YAML 1.2, a
  human-readable data serialization format.
@@ -22,12 +25,12 @@ Description: YAML parser and emitter for C++
  This package provides run-time library of yaml-cpp.
 
 Package: libyaml-cpp-dev
-Section: libdevel
 Architecture: any
-Depends: libyaml-cpp0.5 (= ${binary:Version}), ${misc:Depends}
+Section: libdevel
+Depends: libyaml-cpp0.5 (= ${binary:Version}),
+         ${misc:Depends}
 Description: YAML parser and emitter for C++ - development files
  yaml-cpp is a C++ library for parsing and emitting data in YAML 1.2, a
  human-readable data serialization format.
  .
  This package provides development files of yaml-cpp.
-
