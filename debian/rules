@@ -26,6 +26,8 @@ override_dh_auto_build:
 	dh_testdir
 	$(MAKE) -C build-static
 	$(MAKE) -C build-shared
+	# It might make sense to also provide the utils in a separate package
+	# $(MAKE) -C build-shared util
 
 override_dh_auto_install:
 	dh_testdir
