@@ -1,1 +1,3 @@
 pkgconfig.patch
+fix-unit-test.patch
+remove-conflicting-google-libs.patch
