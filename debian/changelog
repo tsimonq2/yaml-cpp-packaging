@@ -1,10 +1,17 @@
 yaml-cpp (0.5.1+hg20150210-1) UNRELEASED; urgency=medium
 
+  [ Andreas Tille ]
   * Import latest upstream
   * Fix failing unit tests
   * Inject package into collab-maint to enable more people contributing
   * cme fix dpkg-control
   * debhelper 9
+  
+  [ Paul Novotny ]
+  * Add myself as Uploader
+  * Import latest upstream VCS status
+  * Fix failing unit tests, update version number
+  * Install cmake development files
 
  -- Andreas Tille <tille@debian.org>  Mon, 09 Feb 2015 13:36:42 +0100
 
