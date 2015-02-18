@@ -36,6 +36,7 @@ override_dh_auto_install:
 	$(MAKE) -C build-shared install DESTDIR=$(CURDIR)/debian/tmp
 	mkdir debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)
 	mv debian/tmp/usr/lib/lib* debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/
+	dh_install -plibyaml-cpp-dev --autodest usr/lib/cmake/yaml-cpp/*
 
 override_dh_auto_test:
 	$(MAKE) -C build-static test
