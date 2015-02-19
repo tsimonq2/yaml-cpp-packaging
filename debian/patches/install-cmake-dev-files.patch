@@ -1,6 +1,6 @@
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -251,7 +251,7 @@
+@@ -251,18 +251,21 @@
  if(WIN32)
  	set(_library_dir bin)	# .dll are in PATH, like executables
  else()
@@ -9,7 +9,14 @@
  endif()
  
  set(INCLUDE_INSTALL_ROOT_DIR include)
-@@ -262,7 +262,7 @@
+ 
+ set(INCLUDE_INSTALL_DIR ${INCLUDE_INSTALL_ROOT_DIR}/yaml-cpp)
+-set(LIB_INSTALL_DIR "${_library_dir}${LIB_SUFFIX}")
++SET(LIB_INSTALL_DIR "${_library_dir}${LIB_SUFFIX}" CACHE
++    "Directory relative to CMAKE_INSTALL_PREFIX in which to install libraries"
++    STRING)
++MARK_AS_ADVANCED(LIB_INSTALL_DIR)
+ 
  set(_INSTALL_DESTINATIONS
  	RUNTIME DESTINATION bin
  	LIBRARY DESTINATION ${LIB_INSTALL_DIR}
@@ -18,7 +25,7 @@
  )
  
  
-@@ -298,7 +298,7 @@
+@@ -298,7 +301,7 @@
  	endif()
  endif()
  
@@ -27,12 +34,12 @@
  install(
  	DIRECTORY ${header_directory}
  	DESTINATION ${INCLUDE_INSTALL_DIR}
-@@ -314,9 +314,22 @@
+@@ -314,9 +317,22 @@
  set(CONFIG_INCLUDE_DIRS "${YAML_CPP_SOURCE_DIR}/include")
  configure_file(${CMAKE_CURRENT_SOURCE_DIR}/yaml-cpp-config.cmake.in
  	"${PROJECT_BINARY_DIR}/yaml-cpp-config.cmake" @ONLY)
 +
-+set(INSTALL_CMAKE_DIR ${CMAKE_INSTALL_PREFIX}/lib/cmake/yaml-cpp)
++set(INSTALL_CMAKE_DIR ${LIB_INSTALL_DIR}/cmake/yaml-cpp)
 +file(RELATIVE_PATH REL_INCLUDE_DIR "${INSTALL_CMAKE_DIR}" "${CMAKE_INSTALL_PREFIX}/include")
 +set(CONFIG_INCLUDE_DIRS "\${OPENSURGSIM_CMAKE_DIR}/${REL_INCLUDE_DIR}")
 +configure_file(${CMAKE_CURRENT_SOURCE_DIR}/yaml-cpp-config.cmake.in

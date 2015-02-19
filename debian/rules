@@ -18,9 +18,14 @@ export DEB_HOST_MULTIARCH CPPFLAGS CFLAGS CXXFLAGS LDFLAGS
 override_dh_auto_configure:
 	dh_testdir
 	mkdir build-static; cd build-static; \
-		cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DYAML_CPP_BUILD_TOOLS=ON
+		cmake .. -DCMAKE_INSTALL_PREFIX=/usr \
+				 -DLIB_INSTALL_DIR=/usr/lib/$(DEB_HOST_MULTIARCH) \
+				 -DYAML_CPP_BUILD_TOOLS=ON
 	mkdir build-shared; cd build-shared; \
-		cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DBUILD_SHARED_LIBS=ON -DYAML_CPP_BUILD_TOOLS=ON
+		cmake .. -DCMAKE_INSTALL_PREFIX=/usr \
+				 -DLIB_INSTALL_DIR=/usr/lib/$(DEB_HOST_MULTIARCH) \
+				 -DBUILD_SHARED_LIBS=ON \
+				 -DYAML_CPP_BUILD_TOOLS=ON
 
 override_dh_auto_build:
 	dh_testdir
@@ -34,9 +39,6 @@ override_dh_auto_install:
 	dh_prep
 	$(MAKE) -C build-static install DESTDIR=$(CURDIR)/debian/tmp
 	$(MAKE) -C build-shared install DESTDIR=$(CURDIR)/debian/tmp
-	mkdir debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)
-	mv debian/tmp/usr/lib/lib* debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/
-	dh_install -plibyaml-cpp-dev --autodest usr/lib/cmake/yaml-cpp/*
 
 override_dh_auto_test:
 	$(MAKE) -C build-static test
