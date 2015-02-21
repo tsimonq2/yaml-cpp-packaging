@@ -1,4 +1,4 @@
-yaml-cpp (0.5.1+hg20150210-1) UNRELEASED; urgency=medium
+yaml-cpp (0.5.1+hg20150210-1) experimental; urgency=medium
 
   [ Andreas Tille ]
   * Import latest upstream
