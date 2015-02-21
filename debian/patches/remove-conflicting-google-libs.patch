@@ -1,3 +1,11 @@
+Description: Fix linking of both gtest and gmock to unit tests
+ Running the unit tests when yaml-cpp was built as a shared library caused a
+ free of already deallocated memory.  This was fixed by only linking against
+ gmock.
+Author: Paul Novotny <paul@paulnovo.us>
+Bug: https://code.google.com/p/yaml-cpp/issues/detail?id=279
+Last-Update: 2015-02-20
+
 --- a/test/CMakeLists.txt
 +++ b/test/CMakeLists.txt
 @@ -29,6 +29,6 @@

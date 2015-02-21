@@ -1,3 +1,13 @@
+Description: Install libs and cmake files to the Debian location
+ Instead of moving the libs to the DEB_HOST_MULTIARCH lib directory during
+ packaging, have cmake install the libs directly. This is needed so the CMake
+ development files point to the correct location for the libs. Also, install
+ yaml-cpp-config.cmake, yaml-cpp-config-version.cmake, and
+ yaml-cpp-targets.cmake.
+Author: Paul Novotny <paul@paulnovo.us>
+Forwarded: not-needed
+Last-Update: 2015-02-20
+
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -251,18 +251,21 @@

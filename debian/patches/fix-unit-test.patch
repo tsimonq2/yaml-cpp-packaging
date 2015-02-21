@@ -1,3 +1,11 @@
+Description: Fix failing unit test when building shared libs
+ The unit test was writing out the nodes in a different order than the test
+ expected. Since the order isn't defined, the test was actually fine. So we
+ check if the node is written out in one of two possible orders.
+Author: Paul Novotny <paul@paulnovo.us>
+Bug: https://code.google.com/p/yaml-cpp/issues/detail?id=277
+Last-Update: 2015-02-20
+
 --- a/test/node/node_test.cpp
 +++ b/test/node/node_test.cpp
 @@ -363,8 +363,13 @@
