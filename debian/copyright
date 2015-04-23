@@ -1,6 +1,6 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: yaml-cpp
-Source: http://code.google.com/p/yaml-cpp/downloads/list
+Source: https://github.com/jbeder/yaml-cpp
 
 Files: *
 Copyright: 2008 Jesse Beder <jbeder@gmail.com>
