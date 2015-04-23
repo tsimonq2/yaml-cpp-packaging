@@ -1,3 +1,12 @@
+yaml-cpp (0.5.2-1) UNRELEASED; urgency=medium
+
+  * Update due to yaml-cpp from Google Code to GitHub
+  * Imported Upstream version 0.5.2
+  * Remove patches/fix-unit-test.patch, applied upstream
+  * Remove patches/remove-conflicting-google-libs.patch, applied upstream
+
+ -- Paul Novotny <paul@paulnovo.us>  Thu, 23 Apr 2015 16:40:20 -0400
+
 yaml-cpp (0.5.1+hg20150210-1) experimental; urgency=medium
 
   [ Andreas Tille ]
