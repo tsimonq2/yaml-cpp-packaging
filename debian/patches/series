@@ -1,4 +1,2 @@
 pkgconfig.patch
-fix-unit-test.patch
-remove-conflicting-google-libs.patch
 install-cmake-dev-files.patch
