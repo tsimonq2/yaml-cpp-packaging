@@ -1,3 +1,10 @@
+yaml-cpp (0.5.2-2) unstable; urgency=medium
+
+  * Rename libyaml-cpp0.5 to libyaml-cpp0.5v5 for gcc5 transition
+    (Closes: #791317)
+
+ -- Paul Novotny <paul@paulnovo.us>  Tue, 04 Aug 2015 18:03:35 -0400
+
 yaml-cpp (0.5.2-1) unstable; urgency=medium
 
   * Update due to yaml-cpp from Google Code to GitHub
