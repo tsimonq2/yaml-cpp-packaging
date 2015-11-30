@@ -1,10 +1,12 @@
-yaml-cpp (0.5.2-3~1.gbp64734c) UNRELEASED; urgency=medium
+yaml-cpp (0.5.2-3~2.gbpbe3ced) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @64734c3b550a37f20cb8723bd6f86773e5a30810 **
+  ** SNAPSHOT build @be3ced8e2e26d65e6b5e238a8802dfd223be079e **
 
   * append v5 to library package for gcc5
   * Fix yaml-cpp-config.cmake
   * Disable gtest's use of pthread
+  * Disable gtest's use of pthread
+  * Only disable gtest pthreads on hurd and kfreebsd
 
  -- Paul Novotny <paul@paulnovo.us>  Mon, 30 Nov 2015 15:02:06 -0500
 
