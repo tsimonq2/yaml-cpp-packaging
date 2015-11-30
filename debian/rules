@@ -15,19 +15,25 @@ LDFLAGS  :=$(shell dpkg-buildflags --get LDFLAGS)
 
 export DEB_HOST_MULTIARCH CPPFLAGS CFLAGS CXXFLAGS LDFLAGS
 
+ifeq (,$(filter $(DEB_BUILD_ARCH),kfreebsd-amd64 kfreebsd-i386 hurd-i386))
+    DISABLE_PTHREADS=OFF
+else
+    DISABLE_PTHREADS=ON
+endif
+
 override_dh_auto_configure:
 	dh_testdir
 	mkdir build-static; cd build-static; \
 		cmake .. -DCMAKE_INSTALL_PREFIX=/usr \
 				 -DLIB_INSTALL_DIR=/usr/lib/$(DEB_HOST_MULTIARCH) \
 				 -DYAML_CPP_BUILD_TOOLS=ON \
-				 -Dgtest_disable_pthreads=ON
+				 -Dgtest_disable_pthreads=$(DISABLE_PTHREADS)
 	mkdir build-shared; cd build-shared; \
 		cmake .. -DCMAKE_INSTALL_PREFIX=/usr \
 				 -DLIB_INSTALL_DIR=/usr/lib/$(DEB_HOST_MULTIARCH) \
 				 -DBUILD_SHARED_LIBS=ON \
 				 -DYAML_CPP_BUILD_TOOLS=ON \
-				 -Dgtest_disable_pthreads=ON
+				 -Dgtest_disable_pthreads=$(DISABLE_PTHREADS)
 
 override_dh_auto_build:
 	dh_testdir
