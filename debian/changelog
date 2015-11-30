@@ -1,3 +1,13 @@
+yaml-cpp (0.5.2-3~1.gbp64734c) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @64734c3b550a37f20cb8723bd6f86773e5a30810 **
+
+  * append v5 to library package for gcc5
+  * Fix yaml-cpp-config.cmake
+  * Disable gtest's use of pthread
+
+ -- Paul Novotny <paul@paulnovo.us>  Mon, 30 Nov 2015 15:02:06 -0500
+
 yaml-cpp (0.5.2-2) unstable; urgency=medium
 
   * Rename libyaml-cpp0.5 to libyaml-cpp0.5v5 for gcc5 transition

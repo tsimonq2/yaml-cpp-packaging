@@ -20,12 +20,14 @@ override_dh_auto_configure:
 	mkdir build-static; cd build-static; \
 		cmake .. -DCMAKE_INSTALL_PREFIX=/usr \
 				 -DLIB_INSTALL_DIR=/usr/lib/$(DEB_HOST_MULTIARCH) \
-				 -DYAML_CPP_BUILD_TOOLS=ON
+				 -DYAML_CPP_BUILD_TOOLS=ON \
+				 -Dgtest_disable_pthreads=ON
 	mkdir build-shared; cd build-shared; \
 		cmake .. -DCMAKE_INSTALL_PREFIX=/usr \
 				 -DLIB_INSTALL_DIR=/usr/lib/$(DEB_HOST_MULTIARCH) \
 				 -DBUILD_SHARED_LIBS=ON \
-				 -DYAML_CPP_BUILD_TOOLS=ON
+				 -DYAML_CPP_BUILD_TOOLS=ON \
+				 -Dgtest_disable_pthreads=ON
 
 override_dh_auto_build:
 	dh_testdir
