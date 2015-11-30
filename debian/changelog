@@ -3,7 +3,7 @@ yaml-cpp (0.5.2-3) unstable; urgency=medium
   * Fix error in yaml-cpp-config.cmake
   * Disable gtest's use of pthread on hurd and kfreebsd
 
- -- Paul Novotny <paul@PaulDesktop>  Mon, 30 Nov 2015 16:34:41 -0500
+ -- Paul Novotny <paul@paulnovo.us>  Mon, 30 Nov 2015 16:53:57 -0500
 
 yaml-cpp (0.5.2-2) unstable; urgency=medium
 
