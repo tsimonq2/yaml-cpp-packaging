@@ -6,7 +6,7 @@ Description: Install libs and cmake files to the Debian location
  yaml-cpp-targets.cmake.
 Author: Paul Novotny <paul@paulnovo.us>
 Forwarded: not-needed
-Last-Update: 2015-02-20
+Last-Update: 2015-11-29
 
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
@@ -51,7 +51,7 @@ Last-Update: 2015-02-20
 +
 +set(INSTALL_CMAKE_DIR ${LIB_INSTALL_DIR}/cmake/yaml-cpp)
 +file(RELATIVE_PATH REL_INCLUDE_DIR "${INSTALL_CMAKE_DIR}" "${CMAKE_INSTALL_PREFIX}/include")
-+set(CONFIG_INCLUDE_DIRS "\${OPENSURGSIM_CMAKE_DIR}/${REL_INCLUDE_DIR}")
++set(CONFIG_INCLUDE_DIRS "\${YAML_CPP_CMAKE_DIR}/${REL_INCLUDE_DIR}")
 +configure_file(${CMAKE_CURRENT_SOURCE_DIR}/yaml-cpp-config.cmake.in
 +	"${PROJECT_BINARY_DIR}${CMAKE_FILES_DIRECTORY}/yaml-cpp-config.cmake" @ONLY)
 +
