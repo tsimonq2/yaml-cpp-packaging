@@ -1,0 +1,32 @@
+From: Christian Hofstaedtler <zeha@debian.org>
+Date: Thu, 30 Jun 2016 22:05:02 +0000
+Subject: Workaround bug in googletest, fixing bug #812284
+
+---
+ test/CMakeLists.txt | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+
+diff --git a/test/CMakeLists.txt b/test/CMakeLists.txt
+index 61f1f7f..2083d5e 100644
+--- a/test/CMakeLists.txt
++++ b/test/CMakeLists.txt
+@@ -13,6 +13,19 @@ if("${CMAKE_CXX_COMPILER_ID}" MATCHES "GNU" OR
+   set(yaml_test_flags "-Wno-c99-extensions -Wno-variadic-macros -Wno-sign-compare")
+ endif()
+ 
++# In some cases gTest segfaults with GCC >= 6.0.0.  This is a dirty fix.
++# TODO: Update to gTest-release with proper support for GCC >= 6.0.0.
++# See:  https://github.com/google/googletest/issues/705
++IF(CMAKE_COMPILER_IS_GNUCXX)
++	# in order to support cmake 2.8.7 and older
++	IF(NOT CMAKE_CXX_COMPILER_VERSION)
++		include(CheckCompiler)
++	ENDIF(NOT CMAKE_CXX_COMPILER_VERSION)
++	IF(NOT "${CMAKE_CXX_COMPILER_VERSION}" VERSION_LESS "6.0.0")
++		set(yaml_test_flags "${yaml_test_flags} -fno-delete-null-pointer-checks")
++	ENDIF(NOT "${CMAKE_CXX_COMPILER_VERSION}" VERSION_LESS "6.0.0")
++ENDIF(CMAKE_COMPILER_IS_GNUCXX)
++
+ file(GLOB test_headers [a-z_]*.h)
+ file(GLOB test_sources [a-z_]*.cpp integration/[a-z_]*.cpp node/[a-z_]*.cpp)
+ file(GLOB test_new_api_sources new-api/[a-z]*.cpp)
