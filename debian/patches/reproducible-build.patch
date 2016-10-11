@@ -1,0 +1,10 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -100,6 +100,7 @@
+   ${contrib_private_headers}
+ )
+ add_sources(${library_sources})
++list(SORT library_sources)
+ 
+ if(VERBOSE)
+ 	message(STATUS "sources: ${sources}")
