@@ -31,6 +31,7 @@ Package: libyaml-cpp-dev
 Architecture: any
 Section: libdevel
 Depends: libyaml-cpp0.5v5 (= ${binary:Version}),
+         libboost-dev,
          ${misc:Depends}
 Description: YAML parser and emitter for C++ - development files
  yaml-cpp is a C++ library for parsing and emitting data in YAML 1.2, a
