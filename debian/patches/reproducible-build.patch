@@ -1,3 +1,8 @@
+Description: Make the build reproducible
+Author: Reiner Herrmann <reiner@reiner-h.de>
+Bug-Debian: https://bugs.debian.org/808714
+Last-Update: 2016-10-11
+
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -100,6 +100,7 @@
