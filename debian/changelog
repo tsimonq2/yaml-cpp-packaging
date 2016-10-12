@@ -1,3 +1,13 @@
+yaml-cpp (0.5.2-4~1.gbpddea68) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @ddea68d351a15485ced42295a6f3fb79738a423f **
+
+  * Make the build reproducible (Closes: #808714)
+  * Add libboost-dev dependancy (Closes: #812851)
+  * Fix yaml-cpp 0.5.2 issue (Closes: #814499)
+
+ -- Paul Novotny <paul@paulnovo.us>  Wed, 12 Oct 2016 08:29:55 -0400
+
 yaml-cpp (0.5.2-3.1) unstable; urgency=medium
 
   * Non-maintainer upload.
