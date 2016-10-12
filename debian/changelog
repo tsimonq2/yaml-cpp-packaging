@@ -1,14 +1,11 @@
-yaml-cpp (0.5.2-4~2.gbp4398e0) UNRELEASED; urgency=medium
-
-  ** SNAPSHOT build @4398e0c5a546d51f30eb58f802cbf3fd8ca903fe **
+yaml-cpp (0.5.2-4) unstable; urgency=medium
 
   * Make the build reproducible (Closes: #808714)
   * Add libboost-dev dependency (Closes: #812851)
   * Fix yaml-cpp 0.5.2 issue (Closes: #814499)
-  * Update changelog for 0.5.2-4~1.gbpddea68 release
   * Fix lintian warnings: spelling, standards-version, and Vcs-Git
 
- -- Paul Novotny <paul@paulnovo.us>  Wed, 12 Oct 2016 08:29:55 -0400
+ -- Paul Novotny <paul@paulnovo.us>  Wed, 12 Oct 2016 19:48:11 -0400
 
 yaml-cpp (0.5.2-3.1) unstable; urgency=medium
 
