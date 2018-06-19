@@ -1,3 +1,9 @@
+yaml-cpp (0.5.3-1) UNRELEASED; urgency=medium
+
+  * New upstream version
+
+ -- Andreas Tille <tille@debian.org>  Tue, 19 Jun 2018 14:12:09 +0200
+
 yaml-cpp (0.5.2-4) unstable; urgency=medium
 
   * Make the build reproducible (Closes: #808714)
