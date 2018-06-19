@@ -6,12 +6,10 @@ Subject: Workaround bug in googletest, fixing bug #812284
  test/CMakeLists.txt | 13 +++++++++++++
  1 file changed, 13 insertions(+)
 
-diff --git a/test/CMakeLists.txt b/test/CMakeLists.txt
-index 61f1f7f..2083d5e 100644
 --- a/test/CMakeLists.txt
 +++ b/test/CMakeLists.txt
-@@ -13,6 +13,19 @@ if("${CMAKE_CXX_COMPILER_ID}" MATCHES "GNU" OR
-   set(yaml_test_flags "-Wno-c99-extensions -Wno-variadic-macros -Wno-sign-compare")
+@@ -23,6 +23,19 @@ if(CMAKE_CXX_COMPILER_ID MATCHES "GNU" O
+   endif()
  endif()
  
 +# In some cases gTest segfaults with GCC >= 6.0.0.  This is a dirty fix.
