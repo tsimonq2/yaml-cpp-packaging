@@ -1,9 +1,10 @@
-yaml-cpp (0.5.3-1) UNRELEASED; urgency=medium
+yaml-cpp (0.6.2-1) UNRELEASED; urgency=medium
 
   * New upstream version
   * debhelper 11
   * Standards-Version: 4.1.4
   * Point Vcs-fields to Salsa
+  * Fix watch file
 
  -- Andreas Tille <tille@debian.org>  Tue, 19 Jun 2018 14:12:09 +0200
 
