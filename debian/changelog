@@ -2,7 +2,7 @@ yaml-cpp (0.6.2-1) UNRELEASED; urgency=medium
 
   * New upstream version
   * debhelper 11
-  * Standards-Version: 4.1.4
+  * Standards-Version: 4.2.0
   * Point Vcs-fields to Salsa
   * Fix watch file
 
