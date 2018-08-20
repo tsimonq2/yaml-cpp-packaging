@@ -10,6 +10,7 @@ yaml-cpp (0.6.2-1) UNRELEASED; urgency=medium
   [ Graham Inggs ]
   * Drop patches no longer needed
   * Drop dependencies on libboost-dev, no longer needed
+  * Rename binary package for libyaml-cpp0.6 transition
 
  -- Andreas Tille <tille@debian.org>  Tue, 19 Jun 2018 14:12:09 +0200
 
