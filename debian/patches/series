@@ -1,3 +1,2 @@
 install-cmake-dev-files.patch
 reproducible-build.patch
-0003-Workaround-bug-in-googletest-fixing-bug-812284.patch

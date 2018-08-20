@@ -8,7 +8,7 @@ yaml-cpp (0.6.2-1) UNRELEASED; urgency=medium
   * Fix watch file
 
   [ Graham Inggs ]
-  * Drop backport-b426fafff.patch, no longer needed
+  * Drop patches no longer needed
   * Drop dependencies on libboost-dev, no longer needed
 
  -- Andreas Tille <tille@debian.org>  Tue, 19 Jun 2018 14:12:09 +0200
