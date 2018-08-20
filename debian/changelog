@@ -1,10 +1,14 @@
 yaml-cpp (0.6.2-1) UNRELEASED; urgency=medium
 
+  [ Andreas Tille ]
   * New upstream version
   * debhelper 11
   * Standards-Version: 4.2.0
   * Point Vcs-fields to Salsa
   * Fix watch file
+
+  [ Graham Inggs ]
+  * Drop backport-b426fafff.patch, no longer needed
 
  -- Andreas Tille <tille@debian.org>  Tue, 19 Jun 2018 14:12:09 +0200
 
