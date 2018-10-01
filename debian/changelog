@@ -14,6 +14,7 @@ yaml-cpp (0.6.2-1) UNRELEASED; urgency=medium
 
   [ Ondřej Nový ]
   * d/copyright: Use https protocol in Format field
+  * d/changelog: Remove trailing whitespaces
 
  -- Andreas Tille <tille@debian.org>  Tue, 19 Jun 2018 14:12:09 +0200
 
@@ -65,7 +66,7 @@ yaml-cpp (0.5.1+hg20150210-1) experimental; urgency=medium
   * Inject package into collab-maint to enable more people contributing
   * cme fix dpkg-control
   * debhelper 9
-  
+
   [ Paul Novotny ]
   * Add myself as Uploader
   * Import latest upstream VCS status
