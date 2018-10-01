@@ -12,6 +12,9 @@ yaml-cpp (0.6.2-1) UNRELEASED; urgency=medium
   * Drop dependencies on libboost-dev, no longer needed
   * Rename binary package for libyaml-cpp0.6 transition
 
+  [ Ondřej Nový ]
+  * d/copyright: Use https protocol in Format field
+
  -- Andreas Tille <tille@debian.org>  Tue, 19 Jun 2018 14:12:09 +0200
 
 yaml-cpp (0.5.2-4) unstable; urgency=medium
