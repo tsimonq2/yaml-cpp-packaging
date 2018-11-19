@@ -8,8 +8,8 @@ Build-Depends: debhelper (>= 9),
                cmake,
                libboost-dev
 Standards-Version: 3.9.8
-Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/yaml-cpp.git
-Vcs-Git: https://anonscm.debian.org/git/collab-maint/yaml-cpp.git
+Vcs-Git: https://salsa.debian.org/debian/yaml-cpp.git
+Vcs-Browser: https://salsa.debian.org/debian/yaml-cpp
 Homepage: https://github.com/jbeder/yaml-cpp
 
 Package: libyaml-cpp0.5v5
