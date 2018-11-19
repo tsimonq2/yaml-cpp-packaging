@@ -48,9 +48,11 @@ override_dh_auto_install:
 	$(MAKE) -C build-static install DESTDIR=$(CURDIR)/debian/tmp
 	$(MAKE) -C build-shared install DESTDIR=$(CURDIR)/debian/tmp
 
+ifeq ($(filter nocheck,$(DEB_BUILD_OPTIONS)),)
 override_dh_auto_test:
 	$(MAKE) -C build-static test
 	$(MAKE) -C build-shared test
+endif
 
 clean:
 	dh_testdir
