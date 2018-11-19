@@ -1,7 +1,7 @@
 yaml-cpp (0.5.2-4.1) unstable; urgency=medium
 
   * Non-maintainer upload.
-  * Update Vcs-* fields and use git repo under Salsa Debian group. 
+  * Update Vcs-* fields and use git repo under Salsa Debian group.
   * debian/patches:
     + Add patch to fix compatibility with boost 1.67+.
       (Closes: #911956)
@@ -9,8 +9,10 @@ yaml-cpp (0.5.2-4.1) unstable; urgency=medium
       (Upstream 0.5.3 fix, Closes: #847099)
   * debian/watch: Update watch file to track 0.6.x series.
   * debian/rules: Honour nocheck build profile.
+  * debian/changelog: Remove trailing spaces.
+  * debian/copyright: Use secure uri in the Format field.
 
- -- Boyuan Yang <byang@debian.org>  Sun, 18 Nov 2018 20:06:00 -0500
+ -- Boyuan Yang <byang@debian.org>  Sun, 18 Nov 2018 20:07:50 -0500
 
 yaml-cpp (0.5.2-4) unstable; urgency=medium
 
@@ -60,7 +62,7 @@ yaml-cpp (0.5.1+hg20150210-1) experimental; urgency=medium
   * Inject package into collab-maint to enable more people contributing
   * cme fix dpkg-control
   * debhelper 9
-  
+
   [ Paul Novotny ]
   * Add myself as Uploader
   * Import latest upstream VCS status
