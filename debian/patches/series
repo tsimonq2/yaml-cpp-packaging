@@ -4,3 +4,4 @@ reproducible-build.patch
 0003-Workaround-bug-in-googletest-fixing-bug-812284.patch
 backport-b426fafff.patch
 0006-Fix-usage-of-boost-next-and-boost-prior.patch
+303.patch

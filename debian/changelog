@@ -5,10 +5,12 @@ yaml-cpp (0.5.2-4.1) unstable; urgency=medium
   * debian/patches:
     + Add patch to fix compatibility with boost 1.67+.
       (Closes: #911956)
+    + Add patch to fix build failures when trying to remove a node.
+      (Upstream 0.5.3 fix, Closes: #847099)
   * debian/watch: Update watch file to track 0.6.x series.
   * debian/rules: Honour nocheck build profile.
 
- -- Boyuan Yang <byang@debian.org>  Sun, 18 Nov 2018 19:50:46 -0500
+ -- Boyuan Yang <byang@debian.org>  Sun, 18 Nov 2018 20:06:00 -0500
 
 yaml-cpp (0.5.2-4) unstable; urgency=medium
 
