@@ -5,8 +5,9 @@ yaml-cpp (0.5.2-4.1) unstable; urgency=medium
   * debian/patches:
     + Add patch to fix compatibility with boost 1.67+.
       (Closes: #911956)
+  * debian/watch: Update watch file to track 0.6.x series.
 
- -- Boyuan Yang <byang@debian.org>  Sun, 18 Nov 2018 19:42:14 -0500
+ -- Boyuan Yang <byang@debian.org>  Sun, 18 Nov 2018 19:45:59 -0500
 
 yaml-cpp (0.5.2-4) unstable; urgency=medium
 
