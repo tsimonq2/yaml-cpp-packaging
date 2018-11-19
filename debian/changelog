@@ -1,9 +1,12 @@
-yaml-cpp (0.5.2-4.1) UNRELEASED; urgency=medium
+yaml-cpp (0.5.2-4.1) unstable; urgency=medium
 
   * Non-maintainer upload.
   * Update Vcs-* fields and use git repo under Salsa Debian group. 
+  * debian/patches:
+    + Add patch to fix compatibility with boost 1.67+.
+      (Closes: #911956)
 
- -- Boyuan Yang <byang@debian.org>  Sun, 18 Nov 2018 19:34:52 -0500
+ -- Boyuan Yang <byang@debian.org>  Sun, 18 Nov 2018 19:42:14 -0500
 
 yaml-cpp (0.5.2-4) unstable; urgency=medium
 

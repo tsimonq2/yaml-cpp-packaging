@@ -1,16 +1,23 @@
-Description: Install libs and cmake files to the Debian location
- Instead of moving the libs to the DEB_HOST_MULTIARCH lib directory during
- packaging, have cmake install the libs directly. This is needed so the CMake
- development files point to the correct location for the libs. Also, install
- yaml-cpp-config.cmake, yaml-cpp-config-version.cmake, and
- yaml-cpp-targets.cmake.
-Author: Paul Novotny <paul@paulnovo.us>
+From: Paul Novotny <paul@paulnovo.us>
+Date: Sun, 18 Nov 2018 19:36:28 -0500
+Subject: Install libs and cmake files to the Debian location
+
+Instead of moving the libs to the DEB_HOST_MULTIARCH lib directory during
+packaging, have cmake install the libs directly. This is needed so the CMake
+development files point to the correct location for the libs. Also, install
+yaml-cpp-config.cmake, yaml-cpp-config-version.cmake, and
+yaml-cpp-targets.cmake.
 Forwarded: not-needed
 Last-Update: 2015-11-29
+---
+ CMakeLists.txt | 24 ++++++++++++++++++++----
+ 1 file changed, 20 insertions(+), 4 deletions(-)
 
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 1897775..7243d86 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -251,18 +251,21 @@
+@@ -251,18 +251,21 @@ endif()
  if(WIN32)
  	set(_library_dir bin)	# .dll are in PATH, like executables
  else()
@@ -35,7 +42,7 @@ Last-Update: 2015-11-29
  )
  
  
-@@ -298,7 +301,7 @@
+@@ -298,7 +301,7 @@ if(MSVC)
  	endif()
  endif()
  
@@ -44,7 +51,7 @@ Last-Update: 2015-11-29
  install(
  	DIRECTORY ${header_directory}
  	DESTINATION ${INCLUDE_INSTALL_DIR}
-@@ -314,9 +317,22 @@
+@@ -314,9 +317,22 @@ set(EXPORT_TARGETS yaml-cpp CACHE INTERNAL "export targets")
  set(CONFIG_INCLUDE_DIRS "${YAML_CPP_SOURCE_DIR}/include")
  configure_file(${CMAKE_CURRENT_SOURCE_DIR}/yaml-cpp-config.cmake.in
  	"${PROJECT_BINARY_DIR}/yaml-cpp-config.cmake" @ONLY)

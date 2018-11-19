@@ -1,0 +1,28 @@
+From: Boyuan Yang <byang@debian.org>
+Date: Sun, 18 Nov 2018 19:39:15 -0500
+Subject: Fix usage of boost::next and boost:prior.
+
+Bug-Debian: https://bugs.debian.org/911956
+
+They were moved to boost/next_prior.hpp in recent Boost versions.
+---
+ include/yaml-cpp/node/detail/iterator.h | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/include/yaml-cpp/node/detail/iterator.h b/include/yaml-cpp/node/detail/iterator.h
+index 2c701af..e1f4e48 100644
+--- a/include/yaml-cpp/node/detail/iterator.h
++++ b/include/yaml-cpp/node/detail/iterator.h
+@@ -11,7 +11,12 @@
+ #include "yaml-cpp/node/ptr.h"
+ #include "yaml-cpp/node/detail/node_iterator.h"
+ #include <boost/iterator/iterator_adaptor.hpp>
++#include <boost/version.hpp>
++#if BOOST_VERSION >= 106700
++#include <boost/next_prior.hpp>
++#else
+ #include <boost/utility.hpp>
++#endif
+ 
+ namespace YAML {
+ namespace detail {

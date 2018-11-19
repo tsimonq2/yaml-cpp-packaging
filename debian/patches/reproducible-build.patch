@@ -1,11 +1,18 @@
-Description: Make the build reproducible
-Author: Reiner Herrmann <reiner@reiner-h.de>
+From: Reiner Herrmann <reiner@reiner-h.de>
+Date: Sun, 18 Nov 2018 19:36:28 -0500
+Subject: Make the build reproducible
+
 Bug-Debian: https://bugs.debian.org/808714
 Last-Update: 2016-10-11
+---
+ CMakeLists.txt | 1 +
+ 1 file changed, 1 insertion(+)
 
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 7243d86..79d96b9 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -100,6 +100,7 @@
+@@ -100,6 +100,7 @@ set(library_sources
    ${contrib_private_headers}
  )
  add_sources(${library_sources})
