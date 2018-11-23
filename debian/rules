@@ -52,6 +52,14 @@ override_dh_auto_test:
 	$(MAKE) -C build-static test
 	$(MAKE) -C build-shared test
 
+debian/weak-symbols: override_dh_auto_build
+	# All the weak symbols are either template instantiations of the STL
+	# or are optional symbols for inline functions.
+	nm --dynamic --defined-only build-shared/libyaml-cpp.so | awk '$$2 ~ /W/ { print " " $$3 "@Base 0.6.2" } ' > $@
+
+override_dh_makeshlibs: debian/weak-symbols
+	dh_makeshlibs -VNone
+
 clean:
 	dh_testdir
 	dh_auto_clean
