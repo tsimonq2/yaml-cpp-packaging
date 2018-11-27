@@ -16,6 +16,15 @@ yaml-cpp (0.6.2-1) UNRELEASED; urgency=medium
   * d/copyright: Use https protocol in Format field
   * d/changelog: Remove trailing whitespaces
 
+  [ Christopher James Halse Rogers ]
+  * patches/symbol-visibility.patch: Hide non-public-API symbols.
+    - Cuts down the number of exported symbols by over half, and makes
+      it more feasible to use a .symbols file
+  * d/rules: Use VERBOSE make.
+    - Lets the hardening buildlog scanning check that the appropriate
+      flags have been passed, and makes it easier to debug build
+      failures.
+
  -- Andreas Tille <tille@debian.org>  Tue, 19 Jun 2018 14:12:09 +0200
 
 yaml-cpp (0.5.2-4) unstable; urgency=medium
