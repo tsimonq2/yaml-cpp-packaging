@@ -1,7 +1,5 @@
 Source: yaml-cpp
-Maintainer: Lifeng Sun <lifongsun@gmail.com>
-Uploaders: Andreas Tille <tille@debian.org>,
-           Paul Novotny <paul@paulnovo.us>
+Maintainer: Simon Quigley <tsimonq2@ubuntu.com>
 Section: devel
 Priority: optional
 Build-Depends: debhelper (>= 11~),
