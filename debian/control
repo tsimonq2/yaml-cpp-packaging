@@ -2,7 +2,7 @@ Source: yaml-cpp
 Maintainer: Simon Quigley <tsimonq2@ubuntu.com>
 Section: devel
 Priority: optional
-Build-Depends: debhelper (>= 11~),
+Build-Depends: debhelper (>= 11),
                cmake,
 Standards-Version: 4.2.0
 Vcs-Browser: https://salsa.debian.org/debian/yaml-cpp
