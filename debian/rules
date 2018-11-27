@@ -37,8 +37,8 @@ override_dh_auto_configure:
 
 override_dh_auto_build:
 	dh_testdir
-	$(MAKE) -C build-static
-	$(MAKE) -C build-shared
+	$(MAKE) -C build-static VERBOSE=1
+	$(MAKE) -C build-shared VERBOSE=1
 	# It might make sense to also provide the utils in a separate package
 	# $(MAKE) -C build-shared util
 
