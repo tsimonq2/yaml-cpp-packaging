@@ -1,4 +1,4 @@
-yaml-cpp (0.6.2-1) UNRELEASED; urgency=medium
+yaml-cpp (0.6.2-1) experimental; urgency=medium
 
   [ Andreas Tille ]
   * New upstream version
@@ -31,7 +31,7 @@ yaml-cpp (0.6.2-1) UNRELEASED; urgency=medium
   * Run wrap-and-sort.
   * Bump Standards-version to 4.2.1.
 
- -- Andreas Tille <tille@debian.org>  Tue, 19 Jun 2018 14:12:09 +0200
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Tue, 27 Nov 2018 18:23:07 -0600
 
 yaml-cpp (0.5.2-4) unstable; urgency=medium
 
