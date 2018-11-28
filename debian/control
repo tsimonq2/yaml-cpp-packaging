@@ -3,7 +3,7 @@ Maintainer: Simon Quigley <tsimonq2@ubuntu.com>
 Section: devel
 Priority: optional
 Build-Depends: cmake, debhelper (>= 11)
-Standards-Version: 4.2.0
+Standards-Version: 4.2.1
 Vcs-Browser: https://salsa.debian.org/debian/yaml-cpp
 Vcs-Git: https://salsa.debian.org/debian/yaml-cpp.git
 Homepage: https://github.com/jbeder/yaml-cpp

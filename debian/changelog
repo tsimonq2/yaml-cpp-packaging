@@ -29,6 +29,7 @@ yaml-cpp (0.6.2-1) UNRELEASED; urgency=medium
   * Take over maintainership of the package (Closes: #914853).
   * Depend on debhelper 11.
   * Run wrap-and-sort.
+  * Bump Standards-version to 4.2.1.
 
  -- Andreas Tille <tille@debian.org>  Tue, 19 Jun 2018 14:12:09 +0200
 
