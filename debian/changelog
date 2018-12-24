@@ -3,7 +3,7 @@ yaml-cpp (0.6.2-2) UNRELEASED; urgency=medium
   * d/libyaml-cpp0.6.symbols:
     - Add symbols file now that only public symbols are exported
   * d/libyaml-cpp-dev.install:
-    - Don't install gtest/gmock headers
+    - Don't install gtest/gmock headers (Closes: #915575)
 
  -- Christopher James Halse Rogers <raof@ubuntu.com>  Tue, 04 Dec 2018 14:33:50 +1100
 
