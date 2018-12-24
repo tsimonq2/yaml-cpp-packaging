@@ -1,5 +1,5 @@
 Source: yaml-cpp
-Maintainer: Simon Quigley <tsimonq2@ubuntu.com>
+Maintainer: Simon Quigley <tsimonq2@debian.org>
 Section: devel
 Priority: optional
 Build-Depends: cmake, debhelper (>= 11)
