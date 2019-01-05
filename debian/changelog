@@ -1,3 +1,9 @@
+yaml-cpp (0.6.2-3) UNRELEASED; urgency=medium
+
+  * Update symbols from build logs.
+
+ -- Simon Quigley <tsimonq2@debian.org>  Sat, 05 Jan 2019 15:47:12 -0600
+
 yaml-cpp (0.6.2-2) experimental; urgency=medium
 
   [ Christopher James Halse Rogers ]

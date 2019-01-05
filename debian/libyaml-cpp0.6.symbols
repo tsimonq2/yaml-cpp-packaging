@@ -210,11 +210,17 @@ libyaml-cpp.so.0.6 libyaml-cpp0.6 #MINVER#
  _ZTIN4YAML7BadFileE@Base 0.6.2
  _ZTIN4YAML9BadInsertE@Base 0.6.2
  _ZTIN4YAML9ExceptionE@Base 0.6.2
- _ZTISt11_Mutex_baseILN9__gnu_cxx12_Lock_policyE2EE@Base 0.6.2
- _ZTISt15_Sp_counted_ptrIPN4YAML6detail13memory_holderELN9__gnu_cxx12_Lock_policyE2EE@Base 0.6.2
- _ZTISt15_Sp_counted_ptrIPN4YAML6detail6memoryELN9__gnu_cxx12_Lock_policyE2EE@Base 0.6.2
- _ZTISt15_Sp_counted_ptrIPN4YAML6detail9node_dataELN9__gnu_cxx12_Lock_policyE2EE@Base 0.6.2
- _ZTISt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE@Base 0.6.2
+ (arch= armel riscv64)_ZTIN9__gnu_cxx7__mutexE@Base 0.6.2
+ (arch= armel riscv64)_ZTISt11_Mutex_baseILN9__gnu_cxx12_Lock_policyE1EE@Base 0.6.2
+ (arch= !armel !riscv64)_ZTISt11_Mutex_baseILN9__gnu_cxx12_Lock_policyE2EE@Base 0.6.2
+ (arch= armel riscv64)_ZTISt15_Sp_counted_ptrIPN4YAML6detail13memory_holderELN9__gnu_cxx12_Lock_policyE1EE@Base 0.6.2
+ (arch= !armel !riscv64)_ZTISt15_Sp_counted_ptrIPN4YAML6detail13memory_holderELN9__gnu_cxx12_Lock_policyE2EE@Base 0.6.2
+ (arch= armel riscv64)_ZTISt15_Sp_counted_ptrIPN4YAML6detail6memoryELN9__gnu_cxx12_Lock_policyE1EE@Base 0.6.2
+ (arch= !armel !riscv64)_ZTISt15_Sp_counted_ptrIPN4YAML6detail6memoryELN9__gnu_cxx12_Lock_policyE2EE@Base 0.6.2
+ (arch= armel riscv64)_ZTISt15_Sp_counted_ptrIPN4YAML6detail9node_dataELN9__gnu_cxx12_Lock_policyE1EE@Base 0.6.2
+ (arch= !armel !riscv64)_ZTISt15_Sp_counted_ptrIPN4YAML6detail9node_dataELN9__gnu_cxx12_Lock_policyE2EE@Base 0.6.2
+ (arch= armel riscv64)_ZTISt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE@Base 0.6.2
+ (arch= !armel !riscv64)_ZTISt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE@Base 0.6.2
  _ZTSN4YAML11BadPushbackE@Base 0.6.2
  _ZTSN4YAML11InvalidNodeE@Base 0.6.2
  _ZTSN4YAML11KeyNotFoundE@Base 0.6.2
@@ -228,11 +234,17 @@ libyaml-cpp.so.0.6 libyaml-cpp0.6 #MINVER#
  _ZTSN4YAML7BadFileE@Base 0.6.2
  _ZTSN4YAML9BadInsertE@Base 0.6.2
  _ZTSN4YAML9ExceptionE@Base 0.6.2
- _ZTSSt11_Mutex_baseILN9__gnu_cxx12_Lock_policyE2EE@Base 0.6.2
- _ZTSSt15_Sp_counted_ptrIPN4YAML6detail13memory_holderELN9__gnu_cxx12_Lock_policyE2EE@Base 0.6.2
- _ZTSSt15_Sp_counted_ptrIPN4YAML6detail6memoryELN9__gnu_cxx12_Lock_policyE2EE@Base 0.6.2
- _ZTSSt15_Sp_counted_ptrIPN4YAML6detail9node_dataELN9__gnu_cxx12_Lock_policyE2EE@Base 0.6.2
- _ZTSSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE@Base 0.6.2
+ (arch= armel riscv64)_ZTSN9__gnu_cxx7__mutexE@Base 0.6.2-2
+ (arch= armel riscv64)_ZTSSt11_Mutex_baseILN9__gnu_cxx12_Lock_policyE1EE@Base 0.6.2-2
+ (arch= !armel !riscv64)_ZTSSt11_Mutex_baseILN9__gnu_cxx12_Lock_policyE2EE@Base 0.6.2
+ (arch= armel riscv64)_ZTSSt15_Sp_counted_ptrIPN4YAML6detail13memory_holderELN9__gnu_cxx12_Lock_policyE1EE@Base 0.6.2-2
+ (arch= !armel !riscv64)_ZTSSt15_Sp_counted_ptrIPN4YAML6detail13memory_holderELN9__gnu_cxx12_Lock_policyE2EE@Base 0.6.2
+ (arch= armel riscv64)_ZTSSt15_Sp_counted_ptrIPN4YAML6detail6memoryELN9__gnu_cxx12_Lock_policyE1EE@Base 0.6.2-2
+ (arch= !armel !riscv64)_ZTSSt15_Sp_counted_ptrIPN4YAML6detail6memoryELN9__gnu_cxx12_Lock_policyE2EE@Base 0.6.2
+ (arch= armel riscv64)_ZTSSt15_Sp_counted_ptrIPN4YAML6detail9node_dataELN9__gnu_cxx12_Lock_policyE1EE@Base 0.6.2-2
+ (arch= !armel !riscv64)_ZTSSt15_Sp_counted_ptrIPN4YAML6detail9node_dataELN9__gnu_cxx12_Lock_policyE2EE@Base 0.6.2
+ (arch= armel riscv64)_ZTSSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE@Base 0.6.2-2
+ (arch= !armel !riscv64)_ZTSSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE@Base 0.6.2
  _ZTVN4YAML11BadPushbackE@Base 0.6.2
  _ZTVN4YAML11InvalidNodeE@Base 0.6.2
  _ZTVN4YAML11KeyNotFoundE@Base 0.6.2
@@ -246,6 +258,9 @@ libyaml-cpp.so.0.6 libyaml-cpp0.6 #MINVER#
  _ZTVN4YAML7BadFileE@Base 0.6.2
  _ZTVN4YAML9BadInsertE@Base 0.6.2
  _ZTVN4YAML9ExceptionE@Base 0.6.2
- _ZTVSt15_Sp_counted_ptrIPN4YAML6detail13memory_holderELN9__gnu_cxx12_Lock_policyE2EE@Base 0.6.2
- _ZTVSt15_Sp_counted_ptrIPN4YAML6detail6memoryELN9__gnu_cxx12_Lock_policyE2EE@Base 0.6.2
- _ZTVSt15_Sp_counted_ptrIPN4YAML6detail9node_dataELN9__gnu_cxx12_Lock_policyE2EE@Base 0.6.2
+ (arch= armel riscv64)_ZTVSt15_Sp_counted_ptrIPN4YAML6detail13memory_holderELN9__gnu_cxx12_Lock_policyE1EE@Base 0.6.2-2
+ (arch= !armel !riscv64)_ZTVSt15_Sp_counted_ptrIPN4YAML6detail13memory_holderELN9__gnu_cxx12_Lock_policyE2EE@Base 0.6.2
+ (arch= armel riscv64)_ZTVSt15_Sp_counted_ptrIPN4YAML6detail6memoryELN9__gnu_cxx12_Lock_policyE1EE@Base 0.6.2-2
+ (arch= !armel !riscv64)_ZTVSt15_Sp_counted_ptrIPN4YAML6detail6memoryELN9__gnu_cxx12_Lock_policyE2EE@Base 0.6.2
+ (arch= armel riscv64)_ZTVSt15_Sp_counted_ptrIPN4YAML6detail9node_dataELN9__gnu_cxx12_Lock_policyE1EE@Base 0.6.2-2
+ (arch= !armel !riscv64)_ZTVSt15_Sp_counted_ptrIPN4YAML6detail9node_dataELN9__gnu_cxx12_Lock_policyE2EE@Base 0.6.2
