@@ -1,3 +1,9 @@
+yaml-cpp (0.6.2-4) unstable; urgency=medium
+
+  * Upload to Sid.
+
+ -- Simon Quigley <tsimonq2@debian.org>  Mon, 07 Jan 2019 16:00:33 -0600
+
 yaml-cpp (0.6.2-3) experimental; urgency=medium
 
   * Update symbols from build logs.
