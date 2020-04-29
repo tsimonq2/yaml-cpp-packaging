@@ -1,6 +1,7 @@
 yaml-cpp (0.6.3-1) UNRELEASED; urgency=medium
 
   * New upstream release.
+  * Migrate to using the debhelper-compat dependency.
 
  -- Simon Quigley <tsimonq2@debian.org>  Wed, 29 Apr 2020 03:37:01 -0500
 
