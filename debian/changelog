@@ -1,3 +1,9 @@
+yaml-cpp (0.6.3-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Simon Quigley <tsimonq2@debian.org>  Wed, 29 Apr 2020 03:37:01 -0500
+
 yaml-cpp (0.6.2-4) unstable; urgency=medium
 
   * Upload to Sid.
