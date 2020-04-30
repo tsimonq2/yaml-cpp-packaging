@@ -1,4 +1,4 @@
-yaml-cpp (0.6.3-1) UNRELEASED; urgency=medium
+yaml-cpp (0.6.3-1) unstable; urgency=medium
 
   * New upstream release (Closes: #958505).
     - Refresh patches.
@@ -16,7 +16,7 @@ yaml-cpp (0.6.3-1) UNRELEASED; urgency=medium
   * Bump Standards-version to 4.5.0, no changes needed.
   * Migrate to debhelper 13.
 
- -- Simon Quigley <tsimonq2@debian.org>  Wed, 29 Apr 2020 03:37:01 -0500
+ -- Simon Quigley <tsimonq2@debian.org>  Wed, 29 Apr 2020 20:24:07 -0500
 
 yaml-cpp (0.6.2-4) unstable; urgency=medium
 
