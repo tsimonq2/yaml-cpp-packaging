@@ -10,7 +10,7 @@ Last-Update: 2015-11-29
 
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -262,7 +262,10 @@ endif()
+@@ -240,7 +240,10 @@
  set(INCLUDE_INSTALL_ROOT_DIR include)
  
  set(INCLUDE_INSTALL_DIR ${INCLUDE_INSTALL_ROOT_DIR}/yaml-cpp)

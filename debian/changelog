@@ -1,6 +1,7 @@
 yaml-cpp (0.6.3-1) UNRELEASED; urgency=medium
 
   * New upstream release.
+    - Refresh patches.
   * Migrate to using the debhelper-compat dependency.
   * Bump Standards-version to 4.5.0, no changes needed.
 
