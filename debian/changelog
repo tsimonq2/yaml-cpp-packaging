@@ -1,3 +1,10 @@
+yaml-cpp (0.6.3-9) UNRELEASED; urgency=medium
+
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Sat, 16 May 2020 16:39:12 +0200
+
 yaml-cpp (0.6.3-8) unstable; urgency=medium
 
   [ Helmut Grohne ]
