@@ -2,6 +2,7 @@ yaml-cpp (0.6.3-1) UNRELEASED; urgency=medium
 
   * New upstream release.
     - Refresh patches.
+    - BUILD_SHARED_LIBS -> YAML_BUILD_SHARED_LIBS cmake flag.
   * Migrate to using the debhelper-compat dependency.
   * Bump Standards-version to 4.5.0, no changes needed.
   * Migrate to debhelper 13.
