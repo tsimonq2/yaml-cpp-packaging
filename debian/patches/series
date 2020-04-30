@@ -1,3 +1,5 @@
 install-cmake-dev-files.patch
 reproducible-build.patch
 symbol-visibility.patch
+fix-CVE-2017-11692.patch
+fix-unbounded-recursion-depth.patch
