@@ -1,3 +1,11 @@
+yaml-cpp (0.6.3-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload
+  * Revert ABI changes in new release (Closes: #959201)
+    - debian/patches/revert-774f25800e6f19f4b927023c85d1389af322da5e.patch:
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Fri, 08 May 2020 13:15:00 +0200
+
 yaml-cpp (0.6.3-1) unstable; urgency=medium
 
   * New upstream release (Closes: #958505).

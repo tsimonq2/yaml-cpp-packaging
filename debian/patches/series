@@ -3,3 +3,4 @@ reproducible-build.patch
 symbol-visibility.patch
 fix-CVE-2017-11692.patch
 fix-unbounded-recursion-depth.patch
+revert-774f25800e6f19f4b927023c85d1389af322da5e.patch
