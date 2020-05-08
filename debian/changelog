@@ -1,3 +1,10 @@
+yaml-cpp (0.6.3-1.2) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Update also symbols file
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Fri, 08 May 2020 14:15:10 +0200
+
 yaml-cpp (0.6.3-1.1) unstable; urgency=medium
 
   * Non-maintainer upload
