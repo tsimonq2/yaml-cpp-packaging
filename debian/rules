@@ -67,6 +67,10 @@ clean:
 	rm -rf build-static build-shared
 
 %:
+ifneq (,$(filter $(DEB_BUILD_ARCH),mipsel))
+	dh $@ --max-parallel=2
+else
 	dh $@
+endif
 
 .PHONY: clean
