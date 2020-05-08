@@ -69,7 +69,7 @@ libyaml-cpp.so.0.6 libyaml-cpp0.6 #MINVER#
  _ZN4YAML6detail6memory11create_nodeEv@Base 0.6.2
  _ZN4YAML6detail6memory5mergeERKS1_@Base 0.6.2
  _ZN4YAML6detail9node_data10set_scalarERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE@Base 0.6.2
- _ZN4YAML6detail9node_data12empty_scalarB5cxx11Ev@Base 0.6.3
+ _ZN4YAML6detail9node_data12empty_scalarB5cxx11E@Base 0.6.2
  _ZN4YAML6detail9node_data12mark_definedEv@Base 0.6.2
  _ZN4YAML6detail9node_data14convert_to_mapESt10shared_ptrINS0_13memory_holderEE@Base 0.6.2
  _ZN4YAML6detail9node_data14reset_sequenceEv@Base 0.6.2
