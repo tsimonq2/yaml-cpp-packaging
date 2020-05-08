@@ -9,8 +9,13 @@ export DH_OPTIONS
 DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
 CPPFLAGS :=$(shell dpkg-buildflags --get CPPFLAGS)
-CFLAGS   :=$(shell dpkg-buildflags --get CFLAGS)
-CXXFLAGS :=$(shell dpkg-buildflags --get CXXFLAGS)
+ifneq (,$(filter $(DEB_BUILD_ARCH),mipsel))
+    CFLAGS   :=$(shell dpkg-buildflags --get CFLAGS) -g1
+    CXXFLAGS :=$(shell dpkg-buildflags --get CXXFLAGS) -g1
+else
+    CFLAGS   :=$(shell dpkg-buildflags --get CFLAGS)
+    CXXFLAGS :=$(shell dpkg-buildflags --get CXXFLAGS)
+endif
 LDFLAGS  :=$(shell dpkg-buildflags --get LDFLAGS)
 
 export DEB_HOST_MULTIARCH CPPFLAGS CFLAGS CXXFLAGS LDFLAGS
@@ -67,10 +72,6 @@ clean:
 	rm -rf build-static build-shared
 
 %:
-ifneq (,$(filter $(DEB_BUILD_ARCH),mipsel))
-	dh $@ --max-parallel=2
-else
 	dh $@
-endif
 
 .PHONY: clean
