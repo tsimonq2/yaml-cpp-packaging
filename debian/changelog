@@ -1,3 +1,12 @@
+yaml-cpp (0.6.3-4) UNRELEASED; urgency=medium
+
+  [ Helmut Grohne ]
+  * Fix FTCBFS (Closes: #843918)
+    + Let dh_auto_configure pass cross flags
+    + Honour DEB_BUILD_OPTIONS=nocheck
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Sat, 09 May 2020 08:20:43 +0200
+
 yaml-cpp (0.6.3-3) unstable; urgency=medium
 
   * Team upload (salsa.d.o namespace)
