@@ -1,3 +1,9 @@
+yaml-cpp (0.6.3-6) UNRELEASED; urgency=medium
+
+  * Ack NMUs, thanks a bunch Gianfranco!
+
+ -- Simon Quigley <tsimonq2@debian.org>  Sun, 10 May 2020 14:13:33 -0500
+
 yaml-cpp (0.6.3-5) unstable; urgency=medium
 
   * Team upload.
