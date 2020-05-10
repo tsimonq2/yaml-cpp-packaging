@@ -1,5 +1,6 @@
 Source: yaml-cpp
 Maintainer: Simon Quigley <tsimonq2@debian.org>
+Uploaders: Gianfranco Costamagna <locutusofborg@debian.org>
 Section: devel
 Priority: optional
 Build-Depends: cmake, debhelper-compat (= 13)
