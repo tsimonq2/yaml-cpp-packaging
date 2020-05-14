@@ -1,5 +1,6 @@
 yaml-cpp (0.6.3-8) unstable; urgency=medium
 
+  [ Helmut Grohne ]
   * Fix FTCBFS: Don't build tests for DEB_BUILD_OPTIONS=nocheck.
     (Closes: #960167)
 
