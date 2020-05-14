@@ -1,9 +1,9 @@
-yaml-cpp (0.6.3-8) UNRELEASED; urgency=medium
+yaml-cpp (0.6.3-8) unstable; urgency=medium
 
   * Fix FTCBFS: Don't build tests for DEB_BUILD_OPTIONS=nocheck.
     (Closes: #960167)
 
- -- Gianfranco Costamagna <locutusofborg@debian.org>  Wed, 13 May 2020 21:22:21 +0200
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Thu, 14 May 2020 10:29:07 +0200
 
 yaml-cpp (0.6.3-7) unstable; urgency=medium
 
