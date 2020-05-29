@@ -1,3 +1,9 @@
+yaml-cpp (0.6.3-9) unstable; urgency=medium
+
+  * Fix pkg-config and cmake wrong files and paths. LP: #1880419
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Tue, 26 May 2020 17:56:33 +0200
+
 yaml-cpp (0.6.3-8) unstable; urgency=medium
 
   [ Debian Janitor ]

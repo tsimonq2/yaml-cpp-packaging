@@ -8,3 +8,4 @@ fix-unbounded-recursion-depth.patch
 0003-Revert-Disallow-moving-for-the-Parser.patch
 0004-Revert-Apply-formatting-style-tweaks-to-comply-with-.patch
 0005-Revert-fix-up-static-so-works-as-DLL-559.patch
+fix-pkg-config.patch
